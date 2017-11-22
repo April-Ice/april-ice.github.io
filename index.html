@@ -1,0 +1,289 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>IceDay_冰雪天</title>
+
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!------------------------fullPage必须使用的三个引用------------------------------->
+
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <link href="css/jquery.fullPage.css" rel="stylesheet" type="text/css">
+
+    <!----------------------离开弹窗引用css--------------------------------->
+    <link rel="stylesheet" href="css/ouibounce.min.css">
+
+    <!------------------------my css-------------------------------------->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+
+    <div class="con">
+        <!--第一页-->
+        <div class="section s1">
+            <!--<img src="images/wenzi.png">-->
+            <header>
+                <h1>
+                    Hello,world
+                </h1>
+            </header>
+            <section class="ss-style-triangles">
+                <div class="column_left">
+                    <h1>April随想</h1>
+                    <p>
+                        曾经的梦想是仗剑天涯。现在则期待自己成为一个前端大神。<br/> 人生总是过得很匆忙，追求和理想也会不断的变化。
+                        <br/> 时光总是悄然雕琢你我，
+                        <br/> 平淡中创造闪光。
+                    </p>
+                </div>
+                <div class="column_right">
+                    <span class="icon icon-headphones"></span>
+                    <img src="images/a.jpg">
+                </div>
+            </section>
+        </div>
+
+
+        <!--第二页-->
+        <div class="section s2">
+            <ul class="left">
+                <li>
+                    <a href="demo/Common-Css/index_common.html" target="_blank" class="li_img_box box_shadow">
+                        <div class="li_img_box_inner">
+                            常用css效果
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" target="_blank" class="li_img_box box_shadow">
+                        <div class="li_img_box_inner">
+                            DEMO 2
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="right">
+                <h1>记录</h1>
+                <p>常用css效果</p>
+                <a href="#page1">Home</a>
+            </div>
+
+            <div class="bg">
+                <img src="images/bg_flower.png">
+            </div>
+        </div>
+
+
+        <!--第三页-->
+        <div class="section s3 ss-style-triangles">
+            <div class="left">
+                <ul>
+                    <li>
+                        <a href="./demo/course/course.html" target="_blank">
+                            <div class="li_img_box">
+                                <div class="li_img_box_inner">page1</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./demo/wx_scan/adress.html" target="_blank">
+                            <div class="li_img_box">
+                                <div class="li_img_box_inner">page2</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./demo/wx_scan/order.html" target="_blank">
+                            <div class="li_img_box">
+                                <div class="li_img_box_inner">page3</div>
+                            </div>
+                        </a>
+                    </li>
+                      <li>
+                        <a href="./demo/wx_scan/deals.html" target="_blank">
+                            <div class="li_img_box">
+                                <div class="li_img_box_inner">page4</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="right">
+                <h1>记录</h1>
+                <p>页面</p>
+                <a href="#page1">Home</a>
+            </div>
+
+            <div class="bg">
+                <img src="images/sc3.png">
+            </div>
+
+        </div>
+
+
+        <!--第四页-->
+        <div class="section s4 ">
+            <div class="left">
+                <ul>
+                    <li>
+                        <div class="li_img_box">
+                            <div class="li_img_box_inner">
+                                科技感的效果
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="li_img_box">
+                            <div class="li_img_box_inner">
+                                新的技术
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="li_img_box">
+                            <div class="li_img_box_inner">
+                                具有美感的一切
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="right">
+                <h1>光影</h1>
+                <p>仗剑天涯少年<br/> 前路漫漫无边无际
+                </p>
+                <a href="#page1">Home</a>
+            </div>
+
+            <div class="bg">
+                <img src="images/sc2.png">
+            </div>
+        </div>
+
+        <!--第五页-->
+        <div class="section s5">
+            <!--<div class="bg"><img src="images/sc5.png"></div>-->
+            <div class="five-con">
+                <div class="content">
+                    <svg class="text_svg" viewBox="0 0 600 300">
+                        <!-- Gradient -->
+                        <radialGradient id="gr-radial" cx="50%" cy="50%" r="70%">
+                            <!-- Animation for radius of gradient -->
+                            <animate attributeName="r" values="0%;150%;100%;0%" dur="5s" repeatCount="indefinite" />
+                            <!-- Animation for colors of stop-color -->
+                            <stop stop-color="#FFF" offset="0">
+                                <animate attributeName="stop-color" values="#333;#FFF;#FFF;#333" dur="5s" repeatCount="indefinite" />
+                            </stop>
+                            <stop stop-color="rgba(55,55,55,0)" offset="100%" />
+                        </radialGradient>
+
+                        <!-- Text -->
+                        <text text-anchor="middle" x="50%" y="50%" dy=".35em" class="text">
+                            Bye
+                        </text>
+                    </svg>
+                </div>
+            </div>
+
+            <svg id="clouds" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <path d="M-5 100 Q 0 20 5 100 Z
+						 M0 100 Q 5 0 10 100
+						 M5 100 Q 10 30 15 100
+						 M10 100 Q 15 10 20 100
+						 M15 100 Q 20 30 25 100
+						 M20 100 Q 25 -10 30 100
+						 M25 100 Q 30 10 35 100
+						 M30 100 Q 35 30 40 100
+						 M35 100 Q 40 10 45 100
+						 M40 100 Q 45 50 50 100
+						 M45 100 Q 50 20 55 100
+						 M50 100 Q 55 40 60 100
+						 M55 100 Q 60 60 65 100
+						 M60 100 Q 65 50 70 100
+						 M65 100 Q 70 20 75 100
+						 M70 100 Q 75 45 80 100
+						 M75 100 Q 80 30 85 100
+						 M80 100 Q 85 20 90 100
+						 M85 100 Q 90 50 95 100
+						 M90 100 Q 95 25 100 100
+						 M95 100 Q 100 15 105 100 Z">
+                </path>
+            </svg>
+            <section class="related">
+            </section>
+        </div>
+    </div>
+
+    <!--4BBFC3-->
+    <script>
+        $(function () {
+            $(".con").fullpage({
+                sectionsColor: ['#1bbc9b', '#fcf8ed', '#000', '#fcf8ed', '#4BBFC3'],
+                'navigation': true,
+                anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+                menu: "#menu",
+                verticalCentered: false,
+            })
+        })
+    </script>
+
+
+    <!---------- OuiBounce Modal  离开时弹框------------------ -->
+    <div id="ouibounce-modal">
+        <div class="underlay"></div>
+        <div class="modal">
+            <div class="modal-title">
+                <h3>感谢您宝贵的时间</h3>
+            </div>
+            <div class="modal-body" style="text-align: center;">
+                <div class="thank_bg">
+                </div>
+            </div>
+
+            <div class="modal-footer">
+
+            </div>
+        </div>
+    </div>
+    <script src="js/ouibounce.js"></script>
+    <!-- Example page JS        -->
+    <!-- Used to fire the modal -->
+    <script>
+        // if you want to use the 'fire' or 'disable' fn,
+        // you need to save OuiBounce to an object
+        var _ouibounce = ouibounce(document.getElementById('ouibounce-modal'), {
+            aggressive: true,
+            timer: 0,
+            callback: function () {
+                console.log('ouibounce fired!');
+            }
+        });
+
+        $('body').on('click', function () {
+            $('#ouibounce-modal').hide();
+        });
+
+        $('#ouibounce-modal .modal-footer').on('click', function () {
+            $('#ouibounce-modal').hide();
+        });
+
+        $('#ouibounce-modal .modal').on('click', function (e) {
+            e.stopPropagation();
+        });
+    </script>
+</body>
+
+</html>
