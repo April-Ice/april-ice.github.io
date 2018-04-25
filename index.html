@@ -1,40 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" dir="ltr">
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
-    <meta name="Cache-Control" content="private">
-    <title>IceDay</title>
-    <!--[if lt IE 10]>
-    <script type="text/javascript">
-        var str = "你的浏览器版本太low了,已经和时代脱轨了 :(";
-        var str2 = "推荐使用:<a href='https://www.baidu.com/s?ie=UTF-8&wd=%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8' target='_blank' style='color:blue;'>谷歌</a>,"
-                + "<a href='https://www.baidu.com/s?ie=UTF-8&wd=%E7%81%AB%E7%8B%90%E6%B5%8F%E8%A7%88%E5%99%A8' target='_blank' style='color:blue;'>火狐</a>,"
-                + "其他双核极速模式";
-        document.writeln("<pre style='text-align:center;color:#fff;background-color:#0cc; height:100%;border:0;position:fixed;top:0;left:0;width:100%;z-index:1234'>" +
-                "<h2 style='padding-top:200px;margin:0'><strong>" + str + "<br/></strong></h2><h2>" +
-                str2 + "</h2><h2 style='margin:0'><strong>如果你的使用的是双核浏览器,请切换到极速模式访问<br/></strong></h2></pre>");
-        document.execCommand("Stop");
-    </script>
-    <![endif]-->
-    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=PgNbBdaf98nCKyHuNsGBDFtHeWn9pTsf"></script>
-    <script src="./jquery-3.1.1.min.js"></script>
-    <script src="./echarts.min.js"></script>
-    <script src="./bmap.js"></script>
-    <script>
-        window.BMap = BMap
-    </script>
-    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.2&key=3f6065d6837d0efaa7e94cb1470f9473"></script>
-    <script src="https://webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
-    <link rel="shortcut icon" href="favicon.ico">
-    <link href="./wmsfront/antdStyle.css?d60e16d782c6a72df62b" rel="stylesheet">
+  <script data-ionic="inject">
+    (function(w){var i=w.Ionic=w.Ionic||{};i.version='3.9.2';i.angular='5.0.3';i.staticDir='build/';})(window);
+  </script>
+  <meta charset="UTF-8">
+  <title>Ionic App</title>
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#4e8ef7">
+
+  <!-- add to homescreen for ios -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <!-- cordova.js required for cordova apps (remove if not needed) -->
+  <script src="cordova.js"></script>
+
+  <!-- un-comment this code to enable service worker
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log('service worker installed'))
+        .catch(err => console.error('Error', err));
+    }
+  </script>-->
+
+  <link href="build/main.css" rel="stylesheet">
+
 </head>
-
 <body>
-    <div id="app"></div>
-    <script type="text/javascript" src="./wmsfront/vendor.js?d60e16d782c6a72df62b"></script>
-    <script type="text/javascript" src="./wmsfront/bundle.js?d60e16d782c6a72df62b"></script>
-</body>
 
+  <!-- Ionic's root component and where the app will load -->
+  <ion-app></ion-app>
+
+  <!-- The polyfills js is generated during the build process -->
+  <script src="build/polyfills.js"></script>
+
+  <!-- The vendor js is generated during the build process
+       It contains all of the dependencies in node_modules -->
+  <script src="build/vendor.js"></script>
+
+  <!-- The main bundle js is generated during the build process -->
+  <script src="build/main.js"></script>
+
+</body>
 </html>
